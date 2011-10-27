@@ -1,0 +1,184 @@
+/* ============================== */
+/* ! Layout for desktop version   */
+/* ============================== */
+
+	body {
+		font-family: Helvetica, Arial, sans-serif;
+		color:#666666;
+		font-weight:normal;
+		font-size:1em;
+	}
+	
+	.container p {
+	color: #fff;
+	line-height: 100px;
+	background: #000;
+	text-align: center;
+	margin: 20px 0 0 0;
+	}
+
+	.row .logo h1
+	{
+		font-family: "Impact", Helvetica, Arial, sans-serif;
+		color:#666666;
+		letter-spacing: 1px;
+		font-size:3em;
+		text-shadow: 1px 1px 0px #fff;
+		float:left;
+		text-align: center;
+	}
+	.row .logo h1 span
+	{
+		color:#55DDFF;
+	}
+	.row .logo h2
+	{
+		font-family: "Times New Roman", Helvetica, Arial, sans-serif;
+		color:#999999;
+		font-size:1.3em;
+		clear:right;
+		float:left;
+		margin-left: 15px;
+		margin-top: 21px;
+		text-align: center;
+		font-weight:normal;
+	}
+	.row .logo .logoLineOne
+	{
+		background:#55ddff;
+		float:left;
+		height:4px;
+		width:112px;
+		clear:left;
+	}
+	.row .logo .logoLineTwo
+	{
+		background:#666666;
+		float:left;
+		clear:right;
+		height:4px;
+		width:117px;
+	}
+	.row .logo .logoLineOne,
+	.row .logo .logoLineTwo
+	{
+		margin-top:-6px;
+		margin-bottom:15px;
+	}
+	h1
+	{
+		font-size:3em;
+		font-weight:normal;
+		text-shadow: 1px 1px 0px #fff;
+		font-family: "Times New Roman", Helvetica, Arial, sans-serif;
+	}
+	input
+	{
+		font-family: Helvetica, Arial, sans-serif;
+		color:#666;
+	}
+	input[Type="text"],
+	input[Type="password"]
+	{
+		border: 1px solid #666;
+		height:30px;
+		width:196px;
+		outline:none;
+		line-height:30px;
+		vertical-align:top;
+		font-weight:bold;
+		-moz-border-radius: 5px;
+		border-radius: 5px;
+		-webkit-transition: .3s ease-in-out;  
+		-moz-transition: .3s ease-in-out; 
+		
+	}
+	input[Type="submit"]
+	{
+		border: 1px solid #666;
+		height:34px;
+		width:75px;
+		cursor:pointer;
+		vertical-align:top;
+		font-size:0.9em;
+		font-weight:bold;
+		padding:0px;
+		margin:0px;
+		background-color: #96EAFF;
+		/*background-image: url(images/fallback-gradient.png);*/
+		background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#D2F7FF), to(#96EAFF));
+		background-image: -webkit-linear-gradient(top, #D2F7FF, #96EAFF);
+		background-image:    -moz-linear-gradient(top, #D2F7FF, #96EAFF);
+		background-image:     -ms-linear-gradient(top, #D2F7FF, #96EAFF);
+		background-image:      -o-linear-gradient(top, #D2F7FF, #96EAFF);
+		-moz-border-radius: 5px;
+		border-radius: 5px;
+		-webkit-box-shadow: 0px 0px 10px #ffffff;  
+        -moz-box-shadow: 0px 0px 10px #ffffff;  
+        box-shadow: 0px 0px 10px #ffffff;
+		-webkit-transition: .3s ease-in-out;  
+		-moz-transition: .3s ease-in-out; 
+	}
+	
+	input[Type="text"]:focus,
+	input[Type="password"]:focus
+	{ 
+        -webkit-box-shadow: 0px 0px 4px #55DDFF;  
+        -moz-box-shadow: 0px 0px 4px #55DDFF;  
+        box-shadow: 0px 0px 4px #55DDFF; 
+	}
+/* Login */
+
+	.container.login input
+	{
+		margin-top:10px;
+	}
+	.container.login input[Type="text"],
+	.container.login input[Type="password"]
+	{
+		margin-right:20px;
+		text-indent:25px;
+	}
+	.container.login #username
+	{
+		background: #fff url(../images/user.jpg) no-repeat 6px 8px;
+	}
+	.container.login #password
+	{
+		background: #fff url(../images/password.jpg) no-repeat 6px 8px;
+	}
+/* ============================= */
+/* ! Layout for mobile version   */
+/* ============================= */
+
+@media handheld, only screen and (max-width: 767px) {
+
+	body {
+		
+	}
+	
+	.row .logo h1
+	{
+		float:none;
+	}
+	.row .logo h2
+	{
+		float:none;
+		margin-top:0px;
+	}
+	
+}
+
+
+/* ========================================== */
+/* ! Provide higher res assets for iPhone 4   */
+/* ========================================== */
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) { 
+
+/*	.logo {
+		background: url(logo2x.jpg) no-repeat;
+		background-size: 212px 303px;
+	}*/
+
+}
